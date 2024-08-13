@@ -22,3 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+Curl Commands to test:
+ curl -H "Content-Type: application/json" -X POST -d '{"username":"emi","password":"password"}' http://localhost:3000/login
+curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2ODU0NTEyMTR9.1UEYAbmFOSF93yp9pJqNEzkdHr3rVqutPNZWRIPZYkY", http://localhost:3000/products
