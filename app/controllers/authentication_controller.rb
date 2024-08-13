@@ -6,6 +6,7 @@ class AuthenticationController < ApplicationController
       authenticated_user = user&.authenticate(params[:password])
    
       if authenticated_user
+        
         token = JsonWebToken.encode(user_id: user.id)
         expires_at = JsonWebToken.decode(token)[:exp]
    
